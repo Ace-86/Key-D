@@ -1,3 +1,7 @@
+body {
+    background-color:rgb(185, 9, 255);
+}
+
 h1 {
     font-size: 2rem;
     color:rgb(185, 9, 255)
@@ -9,12 +13,40 @@ p {
     font-weight: 600;
 }
 
-div.display {
+.display {
     display: flex;
     flex-direction: column;
     justify-content: right;
     align-items: center;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
     width: 400px;
     height: 500px;
     background-color: rgb(0, 0, 0);
+}
+
+.page-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.empty1 {
+    grid-column: 1 / 2;
+}
+
+.empty2 {
+    grid-column: 3 / 4;
+}
+
+.empty3 {
+    grid-row: 2 / 3;
+}
+
+.empty4 {
+    grid-row: 2 / 3;
+}
+
+.empty5 {
+    grid-row: 2 / 3;
 }

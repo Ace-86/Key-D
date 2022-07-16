@@ -7,3 +7,4 @@ window.addEventListener("keyup", function(e) {
     para.innerHTML = number;
     para2.innerHTML = buttonPress;
 });
+
